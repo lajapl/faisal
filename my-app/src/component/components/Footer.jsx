@@ -30,6 +30,12 @@ const Wrapper = styled.section`
     color: #d6cfc7;
     display: flex;
     text-align: center;
+    z-index: 9000;
+    
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
     
 }
 .hek{

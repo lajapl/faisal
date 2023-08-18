@@ -12,7 +12,10 @@ const {id,price,name,category,image} = curElem
    <div className="card">
    
       {/* {<PriceFormat price={price}/>} */}
+      {price}<br></br>
+      {name}
         <img src={image}/>
+        {name}
         
     
     </div>

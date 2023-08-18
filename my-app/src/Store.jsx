@@ -1,27 +1,63 @@
 import React from 'react'
-import { useFilterContext } from './component/usecontext/FilterContext'
-import Products from './component/Products'
-
-
-
-
+import { styled } from 'styled-components'
+import ProductsList from './ProductsList'
+import Sort from './filter/Sort'
 
 
 
 const Store = () => {
-const {filterProducts} = useFilterContext()
-console.log(filterProducts)
+ 
+  
+  
+    return (
+      <Wrapper className='container'>
+     <div className='raaj'>
+      <div className='lft'>
+        filtersection
+      </div>
+      <section className='right'>
+        <div className='fir'>
+         <Sort/>
+        </div>
+        <div className='roww'>
+          <ProductsList/>
+           {/* <GridView raja={filterProducts}/> */}
+        </div>
+      </section>
 
-  return (
-    <>
-  {
-    filterProducts.map((curElem) =>{
-       return<Products key={curElem.id}{...curElem}/>
-    })
+     </div>
+          </Wrapper>
+    
+    )
   }
-  </>
-  )
+const Wrapper = styled.section`
+.container{
+  
 }
+.raaj{
+  display: flex;
+  
+
+ 
+  
+}
+.lft{
+   width: 20%;
+}
+.right{
+  width: 80%;
+
+}
+
+`
+
+
+
+
+
+
+
+
 
 
 
