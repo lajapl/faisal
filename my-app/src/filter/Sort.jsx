@@ -11,7 +11,7 @@ const Sort = () => {
     <Wrapper >
       <div className='onerow'>       
        <div className='sort'>
-        <button><BsFillGridFill className={oppo ? " sortbtn" :  "sortbtn" } onClick={setListview }/></button>
+        <button><BsFillGridFill className={oppo ? " sortbtn " :  "sortbtn" } onClick={setListview }/></button>
         <button><BsList className={!oppo ? " listbtn" : "listbtn"} onClick={setGridview}/></button>
         </div>
         <div className='allproducts'><p>{filterProducts.length}</p></div>
